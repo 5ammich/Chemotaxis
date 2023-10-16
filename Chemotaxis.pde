@@ -43,15 +43,15 @@ void draw(){
   plY = plY + yChange;
   }
   if (plX > 2000-15){
-    plX = 0;
+    plX = -15;
   }
-  if (plX < 0){
+  if (plX < -15){
     plX = 2000-15;
   }
   if (plY > 1000-15){
-    plY = 0;
+    plY = -15;
   }
-  if (plY < 0){
+  if (plY < -15){
     plY = 1000-15;
   }
 }
@@ -91,7 +91,7 @@ void keyPressed(){
 }
 
 
-//zombies 
+//zombies
 
 class zomB{
  int myX, myY, myColor, armX, armY, darmX, darmY;
