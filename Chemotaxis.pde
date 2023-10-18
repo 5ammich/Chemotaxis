@@ -6,7 +6,7 @@ int xChange = 0;
 int yChange = 0;
 boolean gameStart = false;
 void setup(){
-  frameRate(500);
+  frameRate(30);
   size(2000,1000);
   chad = new zomB [100];
   for (int i = 0; i < chad.length; i++){
