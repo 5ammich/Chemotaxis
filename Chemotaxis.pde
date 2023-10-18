@@ -6,7 +6,7 @@ int xChange = 0;
 int yChange = 0;
 boolean gameStart = false;
 void setup(){
-  frameRate(30);
+  frameRate(60);
   size(2000,1000);
   chad = new zomB [100];
   for (int i = 0; i < chad.length; i++){
@@ -85,19 +85,19 @@ void draw(){
 
 void keyPressed(){
   if (key == 'w' || key == 'W' || keyCode == UP){
-    yChange = -15;
+    yChange = -30;
     xChange = 0;
   }
   if (key == 's' || key == 'S' || keyCode == DOWN){
-    yChange = 15;
+    yChange = 30;
     xChange = 0;
   }
   if (key == 'a' || key == 'A' || keyCode == LEFT){
-    xChange = -15;
+    xChange = -30;
     yChange = 0;
   }
   if (key == 'd' || key == 'D' || keyCode == RIGHT){
-    xChange = 15;
+    xChange = 30;
     yChange = 0;
   }
   if (key == ' '){
