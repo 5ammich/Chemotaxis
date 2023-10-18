@@ -59,17 +59,17 @@ void draw(){
   plX = plX + xChange;
   plY = plY + yChange;
   }
-  if (plX > 1900-15){
+  if (plX > 2000-15){
     plX = -15;
   }
   if (plX < -15){
-    plX = 1900-15;
+    plX = 2000-15;
   }
-  if (plY > 1000-15){
+  if (plY > 900-15){
     plY = -15;
   }
   if (plY < -15){
-    plY = 1000-15;
+    plY = 900-15;
   }
 }
 
