@@ -40,7 +40,7 @@ void draw(){
   fill(255, 0,0);
   text("START", 825,625);
   if (mousePressed && (mouseButton == LEFT)){
-    if ((mouseX < 1075) && (mouseX > 800)){
+    if ((mouseX < 1075) && (mouseX > 800) && (mouseY < 600) && (mouseY > 500)){
      gameStart = true;
   }
   }
