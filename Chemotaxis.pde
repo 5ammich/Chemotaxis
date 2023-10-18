@@ -85,19 +85,19 @@ void draw(){
 
 void keyPressed(){
   if (key == 'w' || key == 'W' || keyCode == UP){
-    yChange = -30;
+    yChange = -20;
     xChange = 0;
   }
   if (key == 's' || key == 'S' || keyCode == DOWN){
-    yChange = 30;
+    yChange = 20;
     xChange = 0;
   }
   if (key == 'a' || key == 'A' || keyCode == LEFT){
-    xChange = -30;
+    xChange = -20;
     yChange = 0;
   }
   if (key == 'd' || key == 'D' || keyCode == RIGHT){
-    xChange = 30;
+    xChange = 20;
     yChange = 0;
   }
   if (key == ' '){
