@@ -1,12 +1,12 @@
 zomB[] chad;
-int heals = 0;
-int plX = (int)(Math.random()*2000);
-int plY = (int)(Math.random()*1000);
+int lifeWid = 2000-60;
+int plX = (int)(Math.random()*1900) + 30;
+int plY = (int)(Math.random()*900) + 30;
 int xChange = 0;
 int yChange = 0;
 boolean gameStart = false;
 void setup(){
-  frameRate(500);
+  frameRate(1000);
   size(2000,1000);
   chad = new zomB [100];
   for (int i = 0; i < chad.length; i++){
@@ -71,6 +71,15 @@ void draw(){
   if (plY < -15){
     plY = 900-15;
   }
+  
+  //lifebar
+  fill(255,0,0);
+  rect(30, 900, 2000-60, 25);
+  fill(0,255,0);
+  rect(30,900,lifeWid,25);
+  fill(0,0,0);
+  textSize(50);
+  text("HEALTH", 900, 850);
 }
 
 
@@ -150,6 +159,14 @@ class zomB{
      darmX = 15;
      darmY = -15;
    }
+    if (plX - 15 < myX && plX + 15 > myX && plY + 15 > myY && plY - 15 < myY){
+      if (lifeWid > 9){
+        lifeWid = lifeWid - 5;  
+      }
+      else if (lifeWid < 10){
+        lifeWid = 0; 
+      }
+ }
   }
  void show(){
    fill(myColor);
