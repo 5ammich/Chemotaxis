@@ -131,6 +131,10 @@ void keyPressed(){
      plY = (int)(Math.random()*900) + 30;
      xChange = 0;
      yChange = 0;
+     chad = new zomB [100];
+     for (int i = 0; i < chad.length; i++){
+     chad[i] = new zomB(1000 + (int)(Math.random()*2000)-1000,500 + (int)(Math.random()*1000)-500); 
+    }
   }
 }
 
