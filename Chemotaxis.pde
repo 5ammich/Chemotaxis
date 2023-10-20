@@ -5,6 +5,7 @@ int plY = (int)(Math.random()*900) + 30;
 int xChange = 0;
 int yChange = 0;
 boolean gameStart = false;
+boolean endGame = false;
 void setup(){
   frameRate(60);
   size(2000,1000);
@@ -45,7 +46,7 @@ void draw(){
   }
   }
   }
-  if (gameStart == true){
+  if (gameStart == true && endGame == false){
   for (int i = 0; i < chad.length; i++){
     chad[i].show();
     chad[i].chase();
@@ -80,6 +81,14 @@ void draw(){
   fill(0,0,0);
   textSize(50);
   text("HEALTH", 900, 850);
+  
+  if (lifeWid == 0){
+    endGame = true;
+    fill(255,0,0);
+    textSize(100);
+    text("GAME OVER", 700, 300);
+    fill(0,0,0);
+  }
 }
 
 
@@ -114,6 +123,15 @@ void keyPressed(){
       plX = plX + 300;
     }
 }
+  if (key == 'r' || key == 'R'){
+     endGame = false;
+     gameStart = false;
+     lifeWid = 2000-60;
+     plX = (int)(Math.random()*1900) + 30;
+     plY = (int)(Math.random()*900) + 30;
+     xChange = 0;
+     yChange = 0;
+  }
 }
 
 
