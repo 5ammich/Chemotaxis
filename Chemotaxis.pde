@@ -49,7 +49,7 @@ void draw(){
   if (gameStart == true && endGame == false){
   for (int i = 0; i < chad.length; i++){
     chad[i].show();
-    chad[i].chase();
+    chad[i].move();
   }
   
   //player
@@ -153,9 +153,7 @@ class zomB{
   darmX = 0;
  }
 
-//same as void move
-
- void chase(){
+ void move(){
    if (plX + 15 > myX){
      myX = myX + (int)(Math.random()*20)-2;
      darmX = 0;
