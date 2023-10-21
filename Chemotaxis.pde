@@ -153,7 +153,7 @@ class zomB{
   darmX = 0;
  }
 
-//same as void move()
+//same as void move
 
  void chase(){
    if (plX + 15 > myX){
