@@ -152,7 +152,9 @@ class zomB{
   darmY = 0;
   darmX = 0;
  }
-//same as void move
+
+//same as void move()
+
  void chase(){
    if (plX + 15 > myX){
      myX = myX + (int)(Math.random()*20)-2;
