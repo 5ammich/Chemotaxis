@@ -152,6 +152,7 @@ class zomB{
   darmY = 0;
   darmX = 0;
  }
+//same as void move
  void chase(){
    if (plX + 15 > myX){
      myX = myX + (int)(Math.random()*20)-2;
@@ -199,17 +200,6 @@ class zomB{
  }
 }
 
-//powerups section
-
-//medkit
-
-class medkit{
-  int medX, medY;
-  medkit(int x, int y){
-    
-    
-    
-  }
   
   
 }
